@@ -1,104 +1,564 @@
-let contacts=[
-contact1={
-    name:"USman",
-    phone:["0343-0304456","0356-64768729"],
-    profile_pic:"https://images.pexels.com/photos/355296/pexels-photo-355296.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    time:"1:00 am",
-    isRead:"ture"
-
-
-},
-{
-    name:"Imran",
-    phone:["0343-0304650","0356-64789729"],
-    time:"2:00 am",
-    profile_pic:"https://cdn.pixabay.com/photo/2015/12/01/20/28/fall-1072821__340.jpg",
-    isRead:"ture"
+let teckkaro={
+title:"teckkaro",
+location:{
+    streetNo:23,
+    universityName:"Usman Institute of Technology",
+    city:"Karachi",
+    road:"University Road"
 
 },
-{
-    name:"Rizwan",
-    phone:["0343-0304650","0356-64789729"],
-    time:"7:00 am",
-    profile_pic:"https://images.pexels.com/photos/355296/pexels-photo-355296.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    isRead:"false"
-
+programs:{
+    program1:"html",
+    program2:"css",
+    program3:"javascipt",
+    program4:"React",
+    program5:"Nodejs"
 },
-{
-    name:"kanwal",
-    phone:["0343-0304650","0356-64789729"],
-    time:"6:00 am",
-    profile_pic:"https://images.pexels.com/photos/355296/pexels-photo-355296.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    isRead:"ture"
-
+Purpose:"to build student as a developer",
+Managment:{
+    NoOfteacher:1,
+    NoOfMentors:7,
+    NoOfHeads:3,
 },
+days:
 {
-    name:"Abdullah",
-    phone:["0343-0304650","0356-64789729"],
-    time:"2:00 am",
-    profile_pic:"https://images.pexels.com/photos/355296/pexels-photo-355296.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    isRead:"false"
-
-},
-{
-    name:"hammad uni",
-    phone:["0343-0304650","0356-64789729"],
-    time:"8:00 am",
-    profile_pic:"https://images.pexels.com/photos/355296/pexels-photo-355296.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    isRead:"ture"
-
-},
-{
-    name:"kishwar",
-    phone:["0343-0304650","0356-64789729"],
-    time:"9:00 am",
-    profile_pic:"https://images.pexels.com/photos/355296/pexels-photo-355296.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    isRead:"ture"
-
-},
-{
-    name:"Uzma",
-    phone:["0343-0304650","0356-64789729"],
-    time:"8:00 am",
-    profile_pic:"https://images.pexels.com/photos/355296/pexels-photo-355296.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    isRead:"ture"
-
-},
-{
-    name:"Ammar",
-    phone:["0343-0304650","0356-64789729"],
-    time:"2:00 am",
-    profile_pic:"https://images.pexels.com/photos/355296/pexels-photo-355296.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    isRead:"ture"
-
-},
-{
-    name:"Nida",
-    phone:["0343-0304650","0356-64789729"],
-    time:"3:00 am",
-    profile_pic:"https://images.pexels.com/photos/355296/pexels-photo-355296.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    isRead:"false"
-
-},
-{
-    name:"Jamal",
-    phone:["0343-0304650","0356-64789729"],
-    time:"8:00 am",
-    profile_pic:"https://images.pexels.com/photos/355296/pexels-photo-355296.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
-    isRead:"true"
-
+    workingDays:["tuesday","thursday","saturaday"],
+    weekendDays:["Momday","Wednesday","Friday"]
+    
 }
+,
+time:"2 to 6 pm",
+requirements:{
+AdmissionRequirments:{
+   minimunAge:15,
+   qualification:"matriculation",
+},  
+AttendenceRequiremnts:{
+percentageOfAttendence:100,
+}  
+},
+Classes:{
+    Cl1:{
+        day:"tuesday",
+        time:"2-6pm",
+        practiceHours:"2hours"
+    },
+    Cl4:{
+        day:"thursday",
+        time:"2-6pm",
+        practiceHours:"2hours"
+    },
+    FYP:{
+        day:"saturaday",
+        time:"2-6pm",
+        practiceHours:"2hours"
+    }
+},
+ExtraClasses:{
+    FYP:{
+     time:"6-7pm", 
+     days:["tuesday","thursday","saturaday"],  
+    }
+},
+lifeSkillCLass:{
+teachers:{
+    teacher1:{
+        Name:"Nouman",
+        Qualification:"BSCS",
+        extra:"a trainer in motivational speech"
+    },
+    teacher2:{
+        Name:"Iftikhar",
+        Qualification:"BSCS",
+        extra:"a trainer in motivational speech"
+    },
+    teacher3:{
+        Name:"Ali",
+        Qualification:"BSCS",
+        extra:"a trainer in motivational speech"
+    },
+    teacher4:{
+        Name:"Yasir Hussain",
+        Qualification:"BSCS",
+        extra:"a trainer in motivational speech"
+    }
+},
+time:"2-6pm",
+presentation:{
+    topics:["lifemotivation","confidencesbuild","conversation"]
+},
+days:["tuesday","thursday","saturaday"]
 
+},
+WebCLassTeacher:{
+    Name:"Miss Sarah",
+    TeacherCode:"033-4",
+    Qualification:"BESE from Ned University",
+    RoomNO:"BS-42"
+},
+Mentors:{
+    Mentor1:{
+        Name:"Sir Ali",
+        Qualification:"BSIT",
+        mentorCode:01,
+        skills:"best in web development",
+        NoOfStudentUNderhim:15
+    },
+    Mentor2:{
+        Name:"Miss Noreen Naz",
+        Qualification:"BSIT",
+        mentorCode:02,
+        skills:"best in web development",
+        NoOfStudentUNderhim:15
+    },
+    Mentor3:{
+        Name:"Miss KhairunNisa",
+        Qualification:"BSIT",
+        mentorCode:03,
+        skills:"best in web development",
+        NoOfStudentUNderhim:15
+    },
+    Mentor3:{
+        Name:"Sir Salman",
+        Qualification:"BSIT",
+        mentorCode:04,
+        skills:"best in web development",
+        NoOfStudentUNderhim:15
+    },
+    Mentor4:{
+        Name:"Miss Dua",
+        Qualification:"BSIT",
+        mentorCode:05,
+        skills:"best in web development",
+        NoOfStudentUNderhim:15
+    },
+    Mentor5:{
+        Name:"Sir Kamran",
+        Qualification:"BSIT",
+        mentorCode:06,
+        skills:"best in web development",
+        NoOfStudentUNderhim:15
+    },
+    Mentor6:{
+        Name:"Sir Faizan",
+        Qualification:"BSIT",
+        mentorCode:07,
+        skills:"best in web development",
+        NoOfStudentUNderhim:15
+    }
 
-
-
-
-
-
-
-
-
-
-
-
-]
+},
+Students:{
+NoOfStudents:100,
+MaleStudents:30,
+FemaleStudent:70,
+Student1:{
+    Name:"Imran",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student1:{
+    Name:"Imran",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:001,
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student2:{
+    Name:"Nida",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:002,
+    Gender:"female",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student3:{
+    Name:"Samreen",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:003,
+    Gender:"female",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student4:{
+    Name:"Talat",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:004,
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student5:{
+    Name:"Arif",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:005,
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student6:{
+    Name:"Salman",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:006,
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student7:{
+    Name:"Arfa",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:007,
+    Gender:"female",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student8:{
+    Name:"Nouman",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:08,
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student9:{
+    Name:"Uzair",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:09,
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student10:{
+    Name:"Kainat",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:010,
+    Gender:"female",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student11:{
+    Name:"Shariq",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:011,
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student12:{
+    Name:"Nouman",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:012,
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student13:{
+    Name:"Imran",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:013,
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student14:{
+    Name:"Saba",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:014,
+    Gender:"female",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student15:{
+    Name:"Uzma",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:015,
+    Gender:"female",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student16:{
+    Name:"Rizwan",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:016,
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student17:{
+    Name:"Usman",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:017,
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student18:{
+    Name:"Irfan",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:18,
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student19:{
+    Name:"Ikram",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:19,
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student20:{
+    Name:"Sehrish",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:20,
+    Gender:"female",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student21:{
+    Name:"kukab",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:21,
+    Gender:"female",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student22:{
+    Name:"mahjabeen",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:22,
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student23:{
+    Name:"Samina",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:23,
+    Gender:"female",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student24:{
+    Name:"khalid",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:24,
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student25:{
+    Name:"kanza",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:25,
+    Gender:"female",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student26:{
+    Name:"Aliyan",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:26,
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student27:{
+    Name:"Mahnoor",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:27,
+    Gender:"female",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student28:{
+    Name:"Sara",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:28,
+    Gender:"female",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student29:{
+    Name:"kishwar",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:29,
+    Gender:"female",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student30:{
+    Name:"Waqar",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:30,
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student31:{
+    Name:"Alam",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:31,
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student32:{
+    Name:"Mubeen",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:32,
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student33:{
+    Name:"Ehtesham",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:33,
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student34:{
+    Name:"Amjad",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:34,
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student35:{
+    Name:"Sarim",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:35,
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student36:{
+    Name:"komal",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:36,
+    Gender:"female",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student37:{
+    Name:"Hasnain",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:37,
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student38:{
+    Name:"Jawad",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:38,
+    Gender:"male",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student39:{
+    Name:"Iqra",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:39,
+    Gender:"female",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+Student40:{
+    Name:"Shumaila",
+    Qualification:"Intermediate",
+    NIC:"40201-74636262-0",
+    phoneno:"0348-898989",
+    Rollno:40,
+    Gender:"female",
+    extraQualificaiton:"no",
+    isMarried:"false"
+},
+}
+}
