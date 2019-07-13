@@ -1,862 +1,868 @@
-let foodResturant={
-    title:"Naya Hassan Zai",
-    Branches:{
-     Karachi_branch:{
-         locations:{
-             location1:{
-                 address:"street no2 gulshan iqbal"
-             },
-             location2:{
-                 address:"street no3 orangi town",
-                 phone_number:0347-238765,
-             email:"hassanzai@SpeechGrammarList.com",
-             },
-             location3:{
-                address:"street no3 orangi town",
-                phone_number:0347-238765,
-             email:"hassanzai@SpeechGrammarList.com",
-            },
-            location4:{
-                address:"street no3 orangi town",
-                phone_number:0347-238765,
-             email:"hassanzai@SpeechGrammarList.com",
-            },
-            location5:{
-                address:"street no3 orangi town",
-                phone_number:0347-238765,
-             email:"hassanzai@SpeechGrammarList.com",
+let fOOD_rESTURANT = {
+    tITLE: "Naya Hassan Zai",
+    bRACHES: {
+        kARACHI_bRACNH: {
+            lOCATIONS: [
+                {
+                    aDDRESS: "street no2 gulshan iqbal",
+               pHONE_nUMBER: 0347 - 238765,
+                 eMAIL: "hassanzai@SpeechGrammarList.com"
+                },
+                {
+                    aDDRESS: "street no3 orangi town",
+              pHONE_nUMBER: 0347 - 238765,
+                  eMAIL: "hassanzai@SpeechGrammarList.com",
+                },
+                {
+                    aDDRESS: "street no3 orangi town",
+              pHONE_nUMBER: 0347 - 238765,
+                 eMAIL: "hassanzai@SpeechGrammarList.com",
+                },
+                {
+                    aDDRESS: "street no3 orangi town",
+               pHONE_nUMBER: 0347 - 238765,
+                 eMAIL: "hassanzai@SpeechGrammarList.com",
+                },
+                {
+                    aDDRESS: "street no3 orangi town",
+               pHONE_nUMBER: 0347 - 238765,
+                 eMAIL: "hassanzai@SpeechGrammarList.com",
+                }
+
+            ],
+            oNLINE_fOOD_RESERVATION: ["dateofevent", "email", "nAME", "phonenumber"],
+            mENU: {
+
+                sOAP: {
+                    nAME: "Chicken Corn Soup",
+                    pRICE: "200rs"
+                },
+
+                salad: [
+                     {
+                        nAME: "Achar Carrot",
+                        pRICE: "200rs"
+                    },
+                 {
+                        nAME: "apple coleslaw",
+                        pRICE: "200rs"
+                    },
+                 {
+                        nAME: "italian paste salad",
+                        pRICE: "200rs"
+                    },
+                     {
+                        nAME: "chatpaty aloo",
+                        pRICE: "200rs"
+                    },
+                 {
+                        nAME: "Fresh cut vegetables",
+                        pRICE: "200rs"
+                    },
+                     {
+                        nAME: "papaya salad",
+                        pRICE: "200rs"
+                    },
+                ],
+                sAUCES: [
+                     {
+                        nAME: "Chutney (Imli)",
+                        pRICE: "300rs"
+                    },
+                     {
+                        nAME: "Mnt raita",
+                        pRICE: "300rs"
+                    },
+                     {
+                        nAME: "salsa sauce",
+                        pRICE: "300rs"
+                    },
+                 {
+                        nAME: "tartar sauce",
+                        pRICE: "300rs"
+                    },
+                    {
+                        nAME: "thai sweet chilli sauce",
+                        pRICE: "300rs"
+                    }
+                ],
+                bREAK_fAST: [
+                     {
+                        nAME: "Butter",
+                        pRICE: "300rs"
+                    },
+                     {
+                        nAME: "jam",
+                        pRICE: "300rs"
+                    },
+                     {
+                        nAME: "Assorted breads",
+                        pRICE: "300rs"
+                    },
+                     {
+                        nAME: "CHiken sandwich",
+                        pRICE: "300rs"
+                    },
+                     {
+                        nAME: "Danish patry",
+                        pRICE: "300rs"
+                    },
+                     {
+                        nAME: "Edd omelet",
+                        pRICE: "300rs"
+                    },
+                     {
+                        nAME: "Muffins",
+                        pRICE: "300rs"
+                    },
+                 {
+                        nAME: "French cake",
+                        pRICE: "300rs"
+                    },
+                     {
+                        nAME: "bak toast",
+                        pRICE: "300rs"
+                    },
+                     {
+                        nAME: "English breakfast",
+                        pRICE: "300rs"
+                    }
+                ],
+                bAR_b_q:[
+                     {
+                        nAME: "beef nanel kabab",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "chatpata tikka",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "till wala tikka",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Chiken Rashmi kabab",
+                        pRICE: "700rs"
+                    },
+                ],
+                sEA_fOOD: [
+                     {
+                        nAME: "Zinger fried prawn",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Fish tikka",
+                        pRICE: "700rs"
+                    }
+                ],
+                pAKISTANI_fOOD: [
+                     {
+                        nAME: "beef nehari",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Lahori murgh chole",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Mutton kunna paya",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Shahi beef daleem",
+                        pRICE: "700rs"
+                    },
+                 {
+                        nAME: "chiken masala biryani",
+                        pRICE: "700rs"
+                    },
+                 {
+                        nAME: "kabab fry",
+                        pRICE: "70rs"
+                    },
+                     {
+                        nAME: "Aloo ki bhujiya",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "chana kari",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "pori paratha",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "kachori",
+                        pRICE: "7rs"
+                    },
+                ],
+                cHINES_fOOD: [
+                     {
+                        nAME: "Cherry chiken",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "fried Rice",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Paking chowmein",
+                        pRICE: "700rs"
+                    },
+                ],
+                mUGHALI: {
+                    nAME: "Chiken Alferode Pasta ",
+                    pRICE: "1000rs"
+                },
+                bREAD: [
+                     {
+                        nAME: "kandhari Naan",
+                        pRICE: "500rs"
+                    },
+                     {
+                        nAME: "Roghani Naan",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Lacha paratha",
+                        pRICE: "200rs"
+                    },
+                     {
+                        nAME: "Aloo ka paratha",
+                        pRICE: "200rs"
+                    },
+                     {
+                        nAME: "Punjabi paratha",
+                        pRICE: "200rs"
+                    },
+                ],
+                dESERT: [
+                     {
+                        nAME: "Khubani Ka Meetha",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Lab-E- Shereen",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Chocolate Fudge Cake",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Chocolate Brownie",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Cream Puff",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Cream Caramel",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Malt Cake",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Cream Puff",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Assorted Mousse Glasses",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Chocolate Mousse Cake",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Coconut Kheer",
+                        pRICE: "700rs"
+                    },
+                ],
+                iCE_cREAM: [
+                     {
+                        nAME: "Vanila",
+                        pRICE: "70rs"
+                    },
+                     {
+                        nAME: "Choclate",
+                        pRICE: "70rs"
+                    },
+                     {
+                        nAME: "Stawebery",
+                        pRICE: "70rs"
+                    },
+                     {
+                        nAME: "Kulfa",
+                        pRICE: "70rs"
+                    },
+                     {
+                        nAME: "Pista",
+                        pRICE: "70rs"
+                    },
+                ],
+                sUGAR_fREE_dESERT: [
+                     {
+                        nAME: "Rice Pudding (Sugarfree)",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Ice Cream (Sugarfree)",
+                        pRICE: "700rs"
+                    },
+                 {
+                        nAME: "Shahi Kulfi (Sugarfree)",
+                        pRICE: "700rs"
+                    },
+                 {
+                        nAME: "Coconut Kheer(Shugar free)",
+                        pRICE: "700rs"
+                    },
+                ],
+                hOT_Drinks: [
+                     {
+                        nAME: "hot coffee",
+                        pRICE: "70rs"
+                    },
+                     {
+                        nAME: "Green Tea",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Kashmiri tea",
+                        pRICE: "700rs"
+                    },
+                ],
+                jUICE: [
+                     {
+                        nAME: "lemon juice",
+                        pRICE: "70rs"
+                    },
+                     {
+                        nAME: "Banana juice",
+                        pRICE: "70rs"
+                    },
+                     {
+                        nAME: "Orange juice",
+                        pRICE: "70rs"
+                    },
+                     {
+                        nAME: "Mango juice",
+                        pRICE: "70rs"
+                    },
+                     {
+                        nAME: "peach juice",
+                        pRICE: "70rs"
+                    }
+                ],
+                dAIRY: [
+                     {
+                        nAME: "Methi lassi",
+                        pRICE: "150rs"
+                    },
+                     {
+                        nAME: "Namkeen lassi",
+                        pRICE: "100rs"
+                    },
+                     {
+                        nAME: "Milk bottle",
+                        pRICE: "150rs"
+                    },
+                ],
+                pAN_sHOP: [
+                     {
+                        nAME: "Pan",
+                        pRICE: "30rs"
+                    },
+                     {
+                        nAME: "Metha Pan",
+                        pRICE: "50rs"
+                    },
+                ]
+
             }
 
         },
-         Online_food_Reservation:["dateofevent","email","name","phonenumber"],
-         menu:{
-             
-                soap:{Name:"Chicken Corn Soup",
-                price:"200rs"},
-             
-             salad:{
-                 item1:{
-                     Name:"Achar Carrot",
-                     price:"200rs"
-                 },
-                 item2:{
-                    Name:"apple coleslaw",
-                    price:"200rs"
+        lAHHORE_bRANCH: {
+            lOCATIONS: [
+                 {
+                    aDDRESS: "street no2 near Shahi Masjid",
+               pHONE_nUMBER: 0347 - 238765,
+                 eMAIL: "hassanzai@SpeechGrammarList.com"
                 },
-                item3:{
-                    Name:"italian paste salad",
-                    price:"200rs"
+                 {
+                    aDDRESS: "street no3 kacha killa",
+               pHONE_nUMBER: 0347 - 238765,
+                 eMAIL: "hassanzai@SpeechGrammarList.com"
                 },
-                item4:{
-                    Name:"chatpaty aloo",
-                    price:"200rs"
+                 {
+                    aDDRESS: "street no3 minare pakistan",
+               pHONE_nUMBER: 0347 - 238765,
+                 eMAIL: "hassanzai@SpeechGrammarList.com",
                 },
-                item5:{
-                    Name:"Fresh cut vegetables",
-                    price:"200rs"
+                 {
+                    aDDRESS: "street no3 orangi town",
+               pHONE_nUMBER: 0347 - 238765,
+                 eMAIL: "hassanzai@SpeechGrammarList.com",
                 },
-                item6:{
-                    Name:"papaya salad",
-                    price:"200rs"
-                },
-             },
-             Sauces:{
-                 item1:{
-                     Name:"Chutney (Imli)",
-                     price:"300rs"
-                 },
-                 item2:{
-                    Name:"Mnt raita",
-                    price:"300rs"
-                },
-                item4:{
-                    Name:"salsa sauce",
-                    price:"300rs"
-                },
-                item5:{
-                    Name:"tartar sauce",
-                    price:"300rs"
-                },
-                item6:{
-                    Name:"thai sweet chilli sauce",
-                    price:"300rs"
+                 {
+                    aDDRESS: "street no3 orangi town",
+               pHONE_nUMBER: 0347 - 238765,
+                 eMAIL: "hassanzai@SpeechGrammarList.com",
                 }
-             },
-             Break_fast:{
-                item1:{
-                    Name:"Butter",
-                    price:"300rs"
-                },
-                item2:{
-                    Name:"jam",
-                    price:"300rs"
-                },
-                item3:{
-                    Name:"Assorted breads",
-                    price:"300rs"
-                },
-                item4:{
-                    Name:"CHiken sandwich",
-                    price:"300rs"
-                },
-                item5:{
-                    Name:"Danish patry",
-                    price:"300rs"
-                },
-                item6:{
-                    Name:"Edd omelet",
-                    price:"300rs"
-                },
-                item7:{
-                    Name:"Muffins",
-                    price:"300rs"
-                },
-                item8:{
-                    Name:"French cake",
-                    price:"300rs"
-                },
-                item9:{
-                    Name:"bak toast",
-                    price:"300rs"
-                },
-                item10:{
-                    Name:"English breakfast",
-                    price:"300rs"
-                }
-             },
-             bar_b_q:{
-                item1:{
-                    Name:"beef nanel kabab",
-                    price:"700rs"
-                },
-                item2:{
-                    Name:"chatpata tikka",
-                    price:"700rs"
-                },
-                item3:{
-                    Name:"till wala tikka",
-                    price:"700rs"
-                },
-                item4:{
-                    Name:"Chiken Rashmi kabab",
-                    price:"700rs"
-                },
-            },
-             sea_food:{
-                item1:{
-                    Name:"Zinger fried prawn",
-                    price:"700rs"
-                },
-                item2:{
-                    Name:"Fish tikka",
-                    price:"700rs"
-                }
-             },
-             Pakistani_food:{
-                item1:{
-                    Name:"beef nehari",
-                    price:"700rs"
-                },
-                item2:{
-                    Name:"Lahori murgh chole",
-                    price:"700rs"
-                },
-                item3:{
-                    Name:"Mutton kunna paya",
-                    price:"700rs"
-                },
-                item4:{
-                    Name:"Shahi beef daleem",
-                    price:"700rs"
-                },
-                item5:{
-                    Name:"chiken masala biryani",
-                    price:"700rs"
-                },
-                item6:{
-                    Name:"kabab fry",
-                    price:"70rs"
-                },
-                item7:{
-                    Name:"Aloo ki bhujiya",
-                    price:"700rs"
-                },
-                item8:{
-                    Name:"chana kari",
-                    price:"700rs"
-                },
-                item9:{
-                    Name:"pori paratha",
-                    price:"700rs"
-                },
-                item10:{
-                    Name:"kachori",
-                    price:"7rs"
-                },
-            },
-             Chinese_food:{
-                item1:{
-                    Name:"Cherry chiken",
-                    price:"700rs"
-                },
-                item2:{
-                    Name:"fried Rice",
-                    price:"700rs"
-                },
-                item3:{
-                    Name:"Paking chowmein",
-                    price:"700rs"
-                },
-            },
-            Mughlai:{
-                Name:"Chiken Alferode Pasta ",
-                price:"1000rs"
-            },
-            Bread:{
-                item1:{
-                    Name:"kandhari Naan",
-                    price:"500rs"
-                },
-                item2:{
-                    Name:"Roghani Naan",
-                    price:"700rs"
-                },
-                item3:{
-                    Name:"Lacha paratha",
-                    price:"200rs"
-                },
-                item4:{
-                    Name:"Aloo ka paratha",
-                    price:"200rs"
-                },
-                item5:{
-                    Name:"Punjabi paratha",
-                    price:"200rs"
-                },
-            },
-            Desert:{
-                item1:{
-                    Name:"Khubani Ka Meetha",
-                    price:"700rs"
-                },
-                item2:{
-                    Name:"Lab-E- Shereen",
-                    price:"700rs"
-                },
-                item3:{
-                    Name:"Chocolate Fudge Cake",
-                    price:"700rs"
-                },
-                item4:{
-                    Name:"Chocolate Brownie",
-                    price:"700rs"
-                },
-                item5:{
-                    Name:"Cream Puff",
-                    price:"700rs"
-                },
-                item6:{
-                    Name:"Cream Caramel",
-                    price:"700rs"
-                },
-                item7:{
-                    Name:"Malt Cake",
-                    price:"700rs"
-                },
-                item8:{
-                    Name:"Cream Puff",
-                    price:"700rs"
-                },
-                item9:{
-                    Name:"Assorted Mousse Glasses",
-                    price:"700rs"
-                },
-                item10:{
-                    Name:"Chocolate Mousse Cake",
-                    price:"700rs"
-                },
-                item8:{
-                    Name:"Coconut Kheer",
-                    price:"700rs"
-                },
-            },
-            Ice_Cream:{
-                item1:{
-                    Name:"Vanila",
-                    price:"70rs"
-                },
-                item2:{
-                    Name:"Choclate",
-                    price:"70rs"
-                },
-                item3:{
-                    Name:"Stawebery",
-                    price:"70rs"
-                },
-                item4:{
-                    Name:"Kulfa",
-                    price:"70rs"
-                },
-                item5:{
-                    Name:"Pista",
-                    price:"70rs"
-                },
-            },
-            Sugar_free_Desert:{
-                item1:{
-                    Name:"Rice Pudding (Sugarfree)",
-                    price:"700rs"
-                },
-                item2:{
-                    Name:"Ice Cream (Sugarfree)",
-                    price:"700rs"
-                },
-                item3:{
-                    Name:"Shahi Kulfi (Sugarfree)",
-                    price:"700rs"
-                },
-                item4:{
-                    Name:"Coconut Kheer(Shugar free)",
-                    price:"700rs"
-                },
-            },
-            HOT_DRINKS:{
-                item1:{
-                    Name:"hot coffee",
-                    price:"70rs"
-                },
-                item2:{
-                    Name:"Green Tea",
-                    price:"700rs"
-                },
-                item3:{
-                    Name:"Kashmiri tea",
-                    price:"700rs"
-                },
-            },
-            JUICE:{
-                item1:{
-                    Name:"lemon juice",
-                    price:"70rs"
-                },
-                item4:{
-                    Name:"Banana juice",
-                    price:"70rs"
-                },
-                item4:{
-                    Name:"Orange juice",
-                    price:"70rs"
-                },
-                item4:{
-                    Name:"Mango juice",
-                    price:"70rs"
-                },
-                item4:{
-                    Name:"peach juice",
-                    price:"70rs"
-                }
-            },
-            DAIRY:{
-                item1:{
-                    Name:"Methi lassi",
-                    price:"150rs"
-                },
-                item2:{
-                    Name:"Namkeen lassi",
-                    price:"100rs"
-                },
-                item3:{
-                    Name:"Milk bottle",
-                    price:"150rs"
-                },
-            },
-            Pan_Shop:{
-                item1:{
-                    Name:"Pan",
-                    price:"30rs"
-                },
-                item2:{
-                    Name:"Metha Pan",
-                    price:"50rs"
-                },
-            } 
 
-        }
-        
-     },
-     Lahore_branch:{
-        locations:{
-            location1:{
-                address:"street no2 near Shahi Masjid",
-                phone_number:0347-238765,
-                email:"hassanzai@SpeechGrammarList.com"
-            },
-            location2:{
-                address:"street no3 kacha killa",
-                phone_number:0347-238765,
-            email:"hassanzai@SpeechGrammarList.com"
-            },
-            location3:{
-               address:"street no3 minare pakistan",
-               phone_number:0347-238765,
-            email:"hassanzai@SpeechGrammarList.com",
-           },
-           location4:{
-               address:"street no3 orangi town",
-               phone_number:0347-238765,
-            email:"hassanzai@SpeechGrammarList.com",
-           },
-           location5:{
-               address:"street no3 orangi town",
-               phone_number:0347-238765,
-            email:"hassanzai@SpeechGrammarList.com",
-           }
+            ],
+            oNLINE_fOOD_RESERVATION: ["dateofevent", "email", "nAME", "phonenumber"],
+            menu: {
 
-       },
-        Online_food_Reservation:["dateofevent","email","name","phonenumber"],
-        menu:{
-            
-               soap:{Name:"Chicken Corn Soup",
-               price:"200rs"},
-            
-            salad:{
-                item1:{
-                    Name:"Achar Carrot",
-                    price:"200rs"
+                sOAP: {
+                    nAME: "Chicken Corn Soup",
+                    pRICE: "200rs"
                 },
-                item2:{
-                   Name:"apple coleslaw",
-                   price:"200rs"
-               },
-               item3:{
-                   Name:"italian paste salad",
-                   price:"200rs"
-               },
-               item4:{
-                   Name:"chatpaty aloo",
-                   price:"200rs"
-               },
-               item5:{
-                   Name:"Fresh cut vegetables",
-                   price:"200rs"
-               },
-               item6:{
-                   Name:"papaya salad",
-                   price:"200rs"
-               },
-            },
-            Sauces:{
-                item1:{
-                    Name:"Chutney (Imli)",
-                    price:"300rs"
-                },
-                item2:{
-                   Name:"Mnt raita",
-                   price:"300rs"
-               },
-               item4:{
-                   Name:"salsa sauce",
-                   price:"300rs"
-               },
-               item5:{
-                   Name:"tartar sauce",
-                   price:"300rs"
-               },
-               item6:{
-                   Name:"thai sweet chilli sauce",
-                   price:"300rs"
-               }
-            },
-            Break_fast:{
-               item1:{
-                   Name:"Butter",
-                   price:"300rs"
-               },
-               item2:{
-                   Name:"jam",
-                   price:"300rs"
-               },
-               item3:{
-                   Name:"Assorted breads",
-                   price:"300rs"
-               },
-               item4:{
-                   Name:"CHiken sandwich",
-                   price:"300rs"
-               },
-               item5:{
-                   Name:"Danish patry",
-                   price:"300rs"
-               },
-               item6:{
-                   Name:"Edd omelet",
-                   price:"300rs"
-               },
-               item7:{
-                   Name:"Muffins",
-                   price:"300rs"
-               },
-               item8:{
-                   Name:"French cake",
-                   price:"300rs"
-               },
-               item9:{
-                   Name:"bak toast",
-                   price:"300rs"
-               },
-               item10:{
-                   Name:"English breakfast",
-                   price:"300rs"
-               }
-            },
-            bar_b_q:{
-               item1:{
-                   Name:"beef nanel kabab",
-                   price:"700rs"
-               },
-               item2:{
-                   Name:"chatpata tikka",
-                   price:"700rs"
-               },
-               item3:{
-                   Name:"till wala tikka",
-                   price:"700rs"
-               },
-               item4:{
-                   Name:"Chiken Rashmi kabab",
-                   price:"700rs"
-               },
-           },
-            sea_food:{
-               item1:{
-                   Name:"Zinger fried prawn",
-                   price:"700rs"
-               },
-               item2:{
-                   Name:"Fish tikka",
-                   price:"700rs"
-               }
-            },
-            Pakistani_food:{
-               item1:{
-                   Name:"beef nehari",
-                   price:"700rs"
-               },
-               item2:{
-                   Name:"Lahori murgh chole",
-                   price:"700rs"
-               },
-               item3:{
-                   Name:"Mutton kunna paya",
-                   price:"700rs"
-               },
-               item4:{
-                   Name:"Shahi beef daleem",
-                   price:"700rs"
-               },
-               item5:{
-                   Name:"chiken masala biryani",
-                   price:"700rs"
-               },
-               item6:{
-                   Name:"kabab fry",
-                   price:"70rs"
-               },
-               item7:{
-                   Name:"Aloo ki bhujiya",
-                   price:"700rs"
-               },
-               item8:{
-                   Name:"chana kari",
-                   price:"700rs"
-               },
-               item9:{
-                   Name:"pori paratha",
-                   price:"700rs"
-               },
-               item10:{
-                   Name:"kachori",
-                   price:"7rs"
-               },
-           },
-            Chinese_food:{
-               item1:{
-                   Name:"Cherry chiken",
-                   price:"700rs"
-               },
-               item2:{
-                   Name:"fried Rice",
-                   price:"700rs"
-               },
-               item3:{
-                   Name:"Paking chowmein",
-                   price:"700rs"
-               },
-           },
-           Mughlai:{
-               Name:"Chiken Alferode Pasta ",
-               price:"1000rs"
-           },
-           Bread:{
-               item1:{
-                   Name:"kandhari Naan",
-                   price:"500rs"
-               },
-               item2:{
-                   Name:"Roghani Naan",
-                   price:"700rs"
-               },
-               item3:{
-                   Name:"Lacha paratha",
-                   price:"200rs"
-               },
-               item4:{
-                   Name:"Aloo ka paratha",
-                   price:"200rs"
-               },
-               item5:{
-                   Name:"Punjabi paratha",
-                   price:"200rs"
-               },
-           },
-           Desert:{
-               item1:{
-                   Name:"Khubani Ka Meetha",
-                   price:"700rs"
-               },
-               item2:{
-                   Name:"Lab-E- Shereen",
-                   price:"700rs"
-               },
-               item3:{
-                   Name:"Chocolate Fudge Cake",
-                   price:"700rs"
-               },
-               item4:{
-                   Name:"Chocolate Brownie",
-                   price:"700rs"
-               },
-               item5:{
-                   Name:"Cream Puff",
-                   price:"700rs"
-               },
-               item6:{
-                   Name:"Cream Caramel",
-                   price:"700rs"
-               },
-               item7:{
-                   Name:"Malt Cake",
-                   price:"700rs"
-               },
-               item8:{
-                   Name:"Cream Puff",
-                   price:"700rs"
-               },
-               item9:{
-                   Name:"Assorted Mousse Glasses",
-                   price:"700rs"
-               },
-               item10:{
-                   Name:"Chocolate Mousse Cake",
-                   price:"700rs"
-               },
-               item8:{
-                   Name:"Coconut Kheer",
-                   price:"700rs"
-               },
-           },
-           Ice_Cream:{
-               item1:{
-                   Name:"Vanila",
-                   price:"70rs"
-               },
-               item2:{
-                   Name:"Choclate",
-                   price:"70rs"
-               },
-               item3:{
-                   Name:"Stawebery",
-                   price:"70rs"
-               },
-               item4:{
-                   Name:"Kulfa",
-                   price:"70rs"
-               },
-               item5:{
-                   Name:"Pista",
-                   price:"70rs"
-               },
-           },
-           Sugar_free_Desert:{
-               item1:{
-                   Name:"Rice Pudding (Sugarfree)",
-                   price:"700rs"
-               },
-               item2:{
-                   Name:"Ice Cream (Sugarfree)",
-                   price:"700rs"
-               },
-               item3:{
-                   Name:"Shahi Kulfi (Sugarfree)",
-                   price:"700rs"
-               },
-               item4:{
-                   Name:"Coconut Kheer(Shugar free)",
-                   price:"700rs"
-               },
-           },
-           HOT_DRINKS:{
-               item1:{
-                   Name:"hot coffee",
-                   price:"70rs"
-               },
-               item2:{
-                   Name:"Green Tea",
-                   price:"700rs"
-               },
-               item3:{
-                   Name:"Kashmiri tea",
-                   price:"700rs"
-               },
-           },
-           JUICE:{
-               item1:{
-                   Name:"lemon juice",
-                   price:"70rs"
-               },
-               item4:{
-                   Name:"Banana juice",
-                   price:"70rs"
-               },
-               item4:{
-                   Name:"Orange juice",
-                   price:"70rs"
-               },
-               item4:{
-                   Name:"Mango juice",
-                   price:"70rs"
-               },
-               item4:{
-                   Name:"peach juice",
-                   price:"70rs"
-               }
-           },
-           DAIRY:{
-               item1:{
-                   Name:"Methi lassi",
-                   price:"150rs"
-               },
-               item2:{
-                   Name:"Namkeen lassi",
-                   price:"100rs"
-               },
-               item3:{
-                   Name:"Milk bottle",
-                   price:"150rs"
-               },
-           },
-           Pan_Shop:{
-               item1:{
-                   Name:"Pan",
-                   price:"30rs"
-               },
-               item2:{
-                   Name:"Metha Pan",
-                   price:"50rs"
-               },
-           } 
 
-       }
-       
-    }
-    },
-    Delvery:{
-        type1:{
-            Name:"Online delivery System",
-            time:"2pm to 12"
-        },
-        type1:{
-            Name:"Reserved seat System",
-            time:"for 24 hours"
-        }
-     },
-    Employees:{
-        employee1:{
-            emp_name:"Hassan",
-            jobtype:"manager",
-            branch:"karachi branch",
-            duty_time:"12 hours",
-            Nic:"45353616316-27137"
-        },
-        employee2:{
-            emp_name:"Imran",
-            jobtype:"manager",
-            branch:"lahore branch",
-            duty_time:"12 hours",
-            Nic:"468296482648"
-        },
-        employee3:{
-            emp_name:"Sehrish",
-            jobtype:"receptionist",
-            branch:"karachi branch",
-            duty_time:"12 hours",
-            Nic:"64892489274"
-        },
-        employee4:{
-            emp_name:"Irfan",
-            jobtype:"Accountant",
-            branch:"karachi branch",
-            duty_time:"12 hours",
-            Nic:"74892749872"
-        },
-        employee5:{
-            emp_name:"Nida",
-            jobtype:"Accountant",
-            branch:"karachi branch",
-            duty_time:"12 hours",
-            NIC:"371937913901"
-        },
-        employee6:{
-            emp_name:"Taimor",
-            jobtype:"receptionist",
-            branch:"karachi branch",
-            duty_time:"12 hours",
-            NIC:"49729472947"
-        },
-        employee7:{
-            emp_name:"shumaila",
-            jobtype:"Accountant",
-            branch:"lahore branch",
-            duty_time:"12 hours",
-            NIC:"371897391739"
-        },
-        employee8:{
-            emp_name:"ALi",
-            jobtype:"Accountant",
-            branch:"lahore branch",
-            duty_time:"12 hours",
-            NIC:"1739179371893"
-        },
-        employee9:{
-            emp_name:"Salman",
-            jobtype:"receptionist",
-            branch:"lahore branch",
-            duty_time:"12 hours",
-            NIC:"31338193"
-        },
-        employee10:{
-            emp_name:"Fazila",
-            jobtype:"receptionist",
-            branch:"Lahore branch",
-            duty_time:"12 hours",
-            NIC:"3781639819"
+                sALAD: [
+                     {
+                        nAME: "Achar Carrot",
+                        pRICE: "200rs"
+                    },
+                     {
+                        nAME: "apple coleslaw",
+                        pRICE: "200rs"
+                    },
+                     {
+                        nAME: "italian paste salad",
+                        pRICE: "200rs"
+                    },
+                     {
+                        nAME: "chatpaty aloo",
+                        pRICE: "200rs"
+                    },
+                     {
+                        nAME: "Fresh cut vegetables",
+                        pRICE: "200rs"
+                    },
+                     {
+                        nAME: "papaya salad",
+                        pRICE: "200rs"
+                    },
+                ],
+                sAUCES: [
+                     {
+                        nAME: "Chutney (Imli)",
+                        pRICE: "300rs"
+                    },
+                     {
+                        nAME: "Mnt raita",
+                        pRICE: "300rs"
+                    },
+                     {
+                        nAME: "salsa sauce",
+                        pRICE: "300rs"
+                    },
+                     {
+                        nAME: "tartar sauce",
+                        pRICE: "300rs"
+                    },
+                     {
+                        nAME: "thai sweet chilli sauce",
+                        pRICE: "300rs"
+                    }
+                ],
+                bREAK_fAST: [
+                     {
+                        nAME: "Butter",
+                        pRICE: "300rs"
+                    },
+                     {
+                        nAME: "jam",
+                        pRICE: "300rs"
+                    },
+                     {
+                        nAME: "Assorted breads",
+                        pRICE: "300rs"
+                    },
+                     {
+                        nAME: "CHiken sandwich",
+                        pRICE: "300rs"
+                    },
+                     {
+                        nAME: "Danish patry",
+                        pRICE: "300rs"
+                    },
+                     {
+                        nAME: "Edd omelet",
+                        pRICE: "300rs"
+                    },
+                 {
+                        nAME: "Muffins",
+                        pRICE: "300rs"
+                    },
+                     {
+                        nAME: "French cake",
+                        pRICE: "300rs"
+                    },
+                     {
+                        nAME: "bak toast",
+                        pRICE: "300rs"
+                    },
+                     {
+                        nAME: "English breakfast",
+                        pRICE: "300rs"
+                    }
+                ],
+                bAR_b_q: [
+                     {
+                        nAME: "beef nanel kabab",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "chatpata tikka",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "till wala tikka",
+                        pRICE: "700rs"
+                    },
+             {
+                        nAME: "Chiken Rashmi kabab",
+                        pRICE: "700rs"
+                    },
+                ],
+                sEA_fOOD: [
+                     {
+                        nAME: "Zinger fried prawn",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Fish tikka",
+                        pRICE: "700rs"
+                    }
+                ],
+                pAKISTANI_fOOD: [
+                     {
+                        nAME: "beef nehari",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Lahori murgh chole",
+                        pRICE: "700rs"
+                    },
+            {
+                        nAME: "Mutton kunna paya",
+                        pRICE: "700rs"
+                    },
+                 {
+                        nAME: "Shahi beef daleem",
+                        pRICE: "700rs"
+                    },
+                 {
+                        nAME: "chiken masala biryani",
+                        pRICE: "700rs"
+                    },
+             {
+                        nAME: "kabab fry",
+                        pRICE: "70rs"
+                    },
+                     {
+                        nAME: "Aloo ki bhujiya",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "chana kari",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "pori paratha",
+                        pRICE: "700rs"
+                    },
+                    {
+                        nAME: "kachori",
+                        pRICE: "7rs"
+                    },
+                ],
+                cHINESE_fOOD: [
+                     {
+                        nAME: "Cherry chiken",
+                        pRICE: "700rs"
+                    },
+                    {
+                        nAME: "fried Rice",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Paking chowmein",
+                        pRICE: "700rs"
+                    },
+                ],
+                mUGHALI: {
+                    nAME: "Chiken Alferode Pasta ",
+                    pRICE: "1000rs"
+                },
+                bREAD: [
+                     {
+                        nAME: "kandhari Naan",
+                        pRICE: "500rs"
+                    },
+                     {
+                        nAME: "Roghani Naan",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Lacha paratha",
+                        pRICE: "200rs"
+                    },
+                     {
+                        nAME: "Aloo ka paratha",
+                        pRICE: "200rs"
+                    },
+                     {
+                        nAME: "Punjabi paratha",
+                        pRICE: "200rs"
+                    },
+                ],
+                dESERT: [
+                     {
+                        nAME: "Khubani Ka Meetha",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Lab-E- Shereen",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Chocolate Fudge Cake",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Chocolate Brownie",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Cream Puff",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Cream Caramel",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Malt Cake",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Cream Puff",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Assorted Mousse Glasses",
+                        pRICE: "700rs"
+                    },
+                 {
+                        nAME: "Chocolate Mousse Cake",
+                        pRICE: "700rs"
+                    },
+                 {
+                        nAME: "Coconut Kheer",
+                        pRICE: "700rs"
+                    },
+                ],
+                iCE_cREAM: [
+                     {
+                        nAME: "Vanila",
+                        pRICE: "70rs"
+                    },
+                     {
+                        nAME: "Choclate",
+                        pRICE: "70rs"
+                    },
+                     {
+                        nAME: "Stawebery",
+                        pRICE: "70rs"
+                    },
+                     {
+                        nAME: "Kulfa",
+                        pRICE: "70rs"
+                    },
+                     {
+                        nAME: "Pista",
+                        pRICE: "70rs"
+                    },
+                ],
+                sUGAR_fREE_dESERT: [
+                     {
+                        nAME: "Rice Pudding (Sugarfree)",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Ice Cream (Sugarfree)",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Shahi Kulfi (Sugarfree)",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Coconut Kheer(Shugar free)",
+                        pRICE: "700rs"
+                    },
+                ],
+                hOT_dRINKS: [
+                     {
+                        nAME: "hot coffee",
+                        pRICE: "70rs"
+                    },
+                     {
+                        nAME: "Green Tea",
+                        pRICE: "700rs"
+                    },
+                     {
+                        nAME: "Kashmiri tea",
+                        pRICE: "700rs"
+                    },
+                ],
+                jUICE: [
+                     {
+                        nAME: "lemon juice",
+                        pRICE: "70rs"
+                    },
+                 {
+                        nAME: "Banana juice",
+                        pRICE: "70rs"
+                    },
+                    {
+                        nAME: "Orange juice",
+                        pRICE: "70rs"
+                    },
+                    {
+                        nAME: "Mango juice",
+                        pRICE: "70rs"
+                    },
+                 {
+                        nAME: "peach juice",
+                        pRICE: "70rs"
+                    }
+                ],
+                dAIRY: [
+                     {
+                        nAME: "Methi lassi",
+                        pRICE: "150rs"
+                    },
+                     {
+                        nAME: "Namkeen lassi",
+                        pRICE: "100rs"
+                    },
+                     {
+                        nAME: "Milk bottle",
+                        pRICE: "150rs"
+                    },
+                ],
+                pAN_sHOP: [
+                     {
+                        nAME: "Pan",
+                        pRICE: "30rs"
+                    },
+                     {
+                        nAME: "Metha Pan",
+                        pRICE: "50rs"
+                    },
+                ]
+
+            }
+
         }
     },
-    Owner:{
-             Name:"hasssan zai",
-             NIC:"3790173091830917",
-             Address:"Gulshane iqbal karachi"
+    dELIVERY: [
+         {
+            nAME: "Online delivery System",
+            time: "2pm to 12"
+        },
+         {
+            nAME: "Reserved seat System",
+            time: "for 24 hours"
+        }
+    ],
+    eMPLOYESS: [
+         {
+            eMP_nAME: "Hassan",
+            jOB_tYPE: "manager",
+            bRANCH: "karachi bRANCH",
+            dUTY_tIME: "12 hours",
+            nIC: "45353616316-27137"
+        },
+         {
+            eMP_nAME: "Imran",
+            jOB_tYPE: "manager",
+            bRANCH: "lahore bRANCH",
+            dUTY_tIME: "12 hours",
+            nIC: "468296482648"
+        },
+         {
+            eMP_nAME: "Sehrish",
+            jOB_tYPE: "receptionist",
+            bRANCH: "karachi bRANCH",
+            dUTY_tIME: "12 hours",
+            nIC: "64892489274"
+        },
+         {
+            eMP_nAME: "Irfan",
+            jOB_tYPE: "Accountant",
+            bRANCH: "karachi bRANCH",
+            dUTY_tIME: "12 hours",
+            nIC: "74892749872"
+        },
+        {
+            eMP_nAME: "Nida",
+            jOB_tYPE: "Accountant",
+            bRANCH: "karachi bRANCH",
+            dUTY_tIME: "12 hours",
+            nIC: "371937913901"
+        },
+         {
+            eMP_nAME: "Taimor",
+            jOB_tYPE: "receptionist",
+            bRANCH: "karachi bRANCH",
+            dUTY_tIME: "12 hours",
+            nIC: "49729472947"
+        },
+         {
+            eMP_nAME: "shumaila",
+            jOB_tYPE: "Accountant",
+            bRANCH: "lahore bRANCH",
+            dUTY_tIME: "12 hours",
+            nIC: "371897391739"
+        },
+         {
+            eMP_nAME: "ALi",
+            jOB_tYPE: "Accountant",
+            bRANCH: "lahore bRANCH",
+            dUTY_tIME: "12 hours",
+            nIC: "1739179371893"
+        },
+         {
+            eMP_nAME: "Salman",
+            jOB_tYPE: "receptionist",
+            bRANCH: "lahore bRANCH",
+            dUTY_tIME: "12 hours",
+            nIC: "31338193"
+        },
+         {
+            eMP_nAME: "Fazila",
+            jOB_tYPE: "receptionist",
+            bRANCH: "Lahore branch",
+            dUTY_tIME: "12 hours",
+            nIC: "3781639819"
+        }
+    ],
+    oWNER: {
+        nAME: "hasssan zai",
+        nIC: "3790173091830917",
+        aDDRESS: "Gulshane iqbal karachi"
     }
-    
+
 
 }
